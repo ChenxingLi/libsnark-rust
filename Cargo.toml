@@ -1,0 +1,19 @@
+[package]
+name = "libsnark-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = "0.2"
+gmp-mpfr-sys = "1.4.1"
+ark-ff = "0.4"
+ark-bn254 = "0.4"
+ark-std = "0.4"
+rand = "0.8"
+
+[build-dependencies]
+cmake = "0.1"
+
+[features]
+parallel = []
+dynamic-code = []
